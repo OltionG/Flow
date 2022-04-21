@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 21, 2022 at 03:16 PM
+-- Generation Time: Apr 21, 2022 at 04:01 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.0.13
 
@@ -20,6 +20,30 @@ SET time_zone = "+00:00";
 --
 -- Database: `flow`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `img_columns`
+--
+
+CREATE TABLE `img_columns` (
+  `ID` int(11) NOT NULL,
+  `img` varchar(255) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `description` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `slideshow`
+--
+
+CREATE TABLE `slideshow` (
+  `ID` int(11) NOT NULL,
+  `img` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -52,6 +76,18 @@ INSERT INTO `users` (`ID`, `name`, `username`, `email`, `password`, `role`) VALU
 --
 
 --
+-- Indexes for table `img_columns`
+--
+ALTER TABLE `img_columns`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- Indexes for table `slideshow`
+--
+ALTER TABLE `slideshow`
+  ADD PRIMARY KEY (`ID`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -60,6 +96,18 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `img_columns`
+--
+ALTER TABLE `img_columns`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `slideshow`
+--
+ALTER TABLE `slideshow`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `users`
