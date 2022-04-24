@@ -75,7 +75,7 @@
 					</div>
 
 					<div>
-						<a class="txt2" href="index.html">
+						<a class="txt2" href="index.php">
 							Sign in
 						</a>
 					</div>

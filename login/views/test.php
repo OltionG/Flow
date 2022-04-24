@@ -17,6 +17,7 @@ button{
     background: rgb(113, 113, 219);
     font-weight: bold;
     color: white;
+    margin-bottom: 5px;
 }
 
 .content-table {
@@ -80,6 +81,7 @@ button{
             <div style="display:flex; align-items: center; justify-content: center; flex-direction: column;">
             <h2>Dashboard</h2>
             <a href="../../main.php"><button>Home</button></a>
+            <a href="create.php"><button>Create</button></a>
             </div>
 			</div>
             <?php
